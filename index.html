@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    box-sizing: border-box;
+    padding: 0;  margin: 0; 
+        }
+
+#box{
+width: 1170px; margin: 0 auto;
+border: 2px solid black;
+overflow-y: auto;
+}
+
+.header{
+    height: 150px; 
+  text-align: center;
+  background-color: rgb(240, 230, 240);   margin: 0; padding: 0;
+}
+.menu {
+    background-color: rgba(238, 238, 165, 0.929);
+    height: 50px;
+    text-align: center;
+}
+.side1{
+    float: left;
+    width: 20%;    text-align: center;
+    height: 600px;
+    background-color: rgba(175, 231, 191, 0.386);
+}
+.contentbox{
+width: 60%;  
+ height: 600px;
+ float: left;
+}    
+
+
+
+.content1{
+     
+     height: 150px;  text-align: center;
+     background-color: rgb(144, 144, 178);
+     clear: both;
+     
+}
+
+.content2{
+    
+     height: 300px;  text-align: center;
+     background-color: rgb(175, 199, 220);  
+      
+}
+.content3{
+    
+     height: 150px;  text-align: center;
+     background-color: rgb(144, 144, 178); 
+}
+
+.side2{
+ 
+    float: right;
+    width: 20%;
+  height: 600px;  text-align: center;
+    background-color: rgba(175, 231, 191, 0.386); 
+    
+}
+
+.footer{
+      padding-bottom: 20px;
+    text-align: center; 
+    background-color: rgb(240, 230, 240);
+}
+
+
+                                               /* mediascreen */
+
+
+@media screen and ( max-width :1170px){
+    #box{
+        width:800px;
+    }
+    
+}
+@media screen and ( max-width :800px){
+    #box{
+        width:500px;
+    }
+}
+@media screen and ( max-width :500px){
+    #box{
+        width:auto;
+    }
+
+    .side1{
+        width:100%; float: none;
+    }
+    .contentbox{
+        width:100%; float: none;
+    }
+    .side2{
+        width:100%; float: none;
+    }
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+<div class="header"> Responsive</div>
+<div class="menu">Menu</div>
+<div class="side1">side1</div>
+<div class="contentbox">
+    <div class="content1">content 1</div>
+    <div class="content2">content 2</div>
+    <div class="content3">content 3</div>
+</div>
+
+
+<div class="side2">side2</div>
+<div class="footer">Footer</div>
+
+</div>
+</body>
+</html>
